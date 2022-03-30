@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ordina la tua pizza</h1>
+    
+    <form method="post" action="pagina-a-cui-navigare-e-mandare-dati-php">
+
+        <select name="gusto">
+            <option value="margherita">Margherita</option>
+            <option value="diavola">Miavola</option>
+            <option value="capricciosa">Capricciosa</option>
+        </select>
+       
+        <h3>Scegli il tipo</h3>
+       <label for="tipo-sottile">Sottile</label>
+        <input id="tipo-sottile" value="sottile" type="radio" name="tipo" checked>
+       
+       <label for="tipo-napoletana">Napoletana</label>
+        <input id="tipo-napoletana" value="napoletana" type="radio" name="tipo">
+
+       <h3>Aggiunte</h3>
+
+      <label for="">buala</label> <input type="checkbox" name="aggiunta-bufala" id="aggiunta-bufala" >
+      <label for="">peosciutto</label><input type="checkbox" name="aggiunta-prosciutto" id="aggiunta-prosciutto">
+
+        <h3>Dati spedizione</h3>
+
+        <label for="nome">nome</label>
+        <input id="nome" type="text" placeholder="scfrivi il tuo nome" name="nome">
+
+        <!--qui sotto 2 modi alternativi tra loro diinviare il form-->
+        <button>Ordina</button>
+        <input type="submit" value="ordina input">
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* IMPOSTAZIONI GENERALI */
+body{font-family: 'Raleway', sans-serif; ;}
+
+/* HEADER */
+header{
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    
+    }
+    h1{
+        font-size:50px;
+        padding: 20px;
+    }
+    header>h2{
+        color: black;
+        font-size: 30px;
+    }
+span {
+    background-color: white;
+    color: lightblue;
+    margin-top: 20px;
+}
+
+  
+
+/* MAIN */
+
+main{
+    padding: 10px;
+}
+
+section{
+    padding: 10px;
+}
+
+
+
+
+
+/* ELEMENTI NEL MAIN */
+
+figure{
+    text-align: center;
+}
+
+address{ 
+    text-align: center;}
+
+
+
+
+h2{
+    color: lightseagreen;
+    text-align: center;
+    font-size:  30px;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+
+h3{
+    font-weight: bolder;
+    margin-left: 20px;
+    font-weight: bold;
+  
+}
+
+b{
+    font-weight: bold;
+}
+
+blockquote{
+    background-color: lightgrey;
+    font-weight: 700;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+  
+    
+}
+strong{
+    color:blue;
+    font-family: italic;
+
+}
+
+p{
+    padding: 20px;
+
+}
+mark{ background-color: blue;
+    color: white;
+
+}
+
+ul>li{
+   
+    margin-left: 30px;
+    margin-bottom: 20px;
+    
+}
+dl>dt{
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+dd{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+kbd{
+
+color: yellow;
+
+}
+a{
+    color: red;
+}
+
