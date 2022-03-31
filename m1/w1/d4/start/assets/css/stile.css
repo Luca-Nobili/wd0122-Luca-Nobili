@@ -18,9 +18,19 @@ header{
 
 }
 
+header div p{
+
+   text-transform: uppercase;
+}
+
 p header{
     padding: 10px;
 
+}
+
+header a{
+    color: white;
+    text-decoration: none;
 }
 
 header li{
@@ -34,12 +44,17 @@ header li::after{
     content: "\21D0";
 }
 
+hr{
+    display: none;
+}
+
 /* MAIN */
 main{
     background-color: white;
     margin: 20px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
+    box-shadow: 0px 2px 4px gray;
 }
 
 
@@ -61,6 +76,9 @@ h1+p{
 p{
     margin-left: 10px;
     padding: 10px;
+}
+strong{
+    color: blueviolet;
 }
 article h2{
     margin-left: 20px;
@@ -143,6 +161,10 @@ td{
         text-transform: uppercase;
     }
 
+    input{
+        border-bottom: dashed;
+    }
+
 
 
 
@@ -150,9 +172,12 @@ td{
 
 aside{
   
-    margin: 20px;
+    margin: 10px 20px 10px 20px;
+    
 }
-
+aside div{
+    margin-bottom: 20px;
+}
 aside h2{
     text-align: center;
     font-size: x-large;
