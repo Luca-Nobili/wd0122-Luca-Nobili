@@ -1,0 +1,175 @@
+@media(min-width: 768px){
+
+    header{width: 100%;
+    font-size: 30px;
+    }
+
+  
+
+    h1{
+        text-align: center;
+        font-size: 30px;
+        margin: auto;
+    }
+
+    p{
+        font-size: 15px;
+
+    }
+
+
+    table {
+        margin: auto;
+        width: 350px;
+        margin-bottom: 20px;
+
+
+    }
+
+    caption{
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+
+    tbody td :last-child{
+         text-align: center;
+    }
+
+    tbody th :last-child{
+
+        text-align: center;
+    }
+    article{
+        text-align: center;
+    }
+
+    iframe{
+
+        width: auto;
+        height: 200px;
+        
+    }
+
+    section{
+        text-align: center;
+
+    }
+
+   
+
+
+} 
+
+@media(min-width: 1201px){
+
+h1{
+font-size: 60px;
+
+}
+
+header a{
+    font-size: 30px;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ol li{
+    font-size: 20px;
+}
+
+
+header p{
+    font-size: 20px;
+}
+
+p{
+
+    font-size: 25px;
+}
+
+
+
+table{
+
+    width: 800px;
+
+}
+
+iframe{
+    width: 700px;
+    height: 500px;
+}
+
+input, button{
+
+    font-size: 20px;
+}
+
+aside h2{
+
+    font-size: 30px;
+}
+
+aside a{
+    font-size: 30px;
+}
+
+div{
+    font-size: 20px;
+}
+
+i{
+    font-size: 20px;
+}
+
+
+}
+
+@media print{
+
+  body{
+      font-size: 22px;
+  }
+
+body, header {
+
+    background-color: none;
+}
+
+header, iframe, aside, section, footer{
+    display: none;
+}
+
+main{
+    border: 0px;
+}
+
+ul li{
+
+    padding-left: 20px;
+}
+
+ol li{
+
+    padding-left: 20px;
+}
+ th {
+     color: black;
+ }
+
+ main{
+     box-shadow: none;
+ }
+
+
+
+}
+
+
+
+
+
+
+
