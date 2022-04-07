@@ -1,0 +1,109 @@
+
+
+#lavagna{
+    width: 800px;
+    height: 400px;
+    background-color: darkgrey;
+    
+    padding: 30px;
+    
+    
+}
+
+
+
+.conteiner{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-size: 15px;
+    
+    
+   
+
+    
+    
+}
+
+
+
+h1{
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+    padding-top: 5px;
+    font: italic;
+}
+
+
+
+
+.task1, .task5, .task7{
+   
+    font-size: 20px;
+    
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+    box-shadow: 20px 10px 20px black;
+    background: linear-gradient(rgb(211, 211, 99), rgb(173, 173, 91));
+    
+  
+
+}
+
+.task2, .task4, .task8{
+    
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(10deg);
+    box-shadow: 20px 10px 20px black;
+    background: linear-gradient(rgb(128, 208, 128), rgb(52, 123, 52));
+}
+
+.task3, .task6{
+   
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-10deg);
+    box-shadow: 20px 10px 20px black;
+    background: linear-gradient(rgb(226, 133, 236),rgb(138, 78, 149));
+}
+
+
+
+
+.task:hover{
+  
+    transform:scale(1.5);
+    transition:.3s linear;
+    z-index: 1;
+    
+   
+    
+}
+
+
+
+
+
