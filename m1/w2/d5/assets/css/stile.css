@@ -26,6 +26,10 @@ h2{
 
 /* HEADER */
 
+@media screen and (min-width:480px){
+    
+
+
 #menu{
     background-color: white;
     height: 0;
@@ -65,6 +69,10 @@ button{
     box-shadow: 3px 3px 3px 3px black;
 
     
+}
+
+.navbar2{
+    display: none;
 }
 
 label{
@@ -172,6 +180,7 @@ tfoot{
 
 section{
     font-size: 15px;
+    text-align: center;
 }
 
 input {
@@ -182,19 +191,35 @@ input {
     font-size: 20px;
  }
 
-
-@media screen and (min-width: 768px) {
- #mobile{
-        display: none;
-    }
-}
-
-@media screem and (max-width:768px){
-
- #desktop {
+ #desktop{
      display: none;
  }
+
+ main .indirizzo {
+     font-size: 10px;
+     margin-top: 20px;
+ }
+
+  .indirizzo h3{
+     font-size: 20px;
+ }
+
+ main .lavora {
+    font-size: 10px;
+    margin-top: 20px;
 }
+
+ .lavora h3{
+    font-size: 20px;
+}
+
+}
+
+
+
+
+
+
 
 
     
@@ -207,12 +232,32 @@ input {
       font-size:50%;
   }
 
+  
+    header{
+        position: relative;
+    }
+
   header div{
       display: flex;
       flex-direction:column;
       height: 300px;
       padding: 70px;
       
+  }
+
+  .menu{
+      color: black;
+      font-size:20px;
+      position: absolute;
+      top: 0;
+      right: 200px;
+      
+  }
+
+  nav button{
+      position: absolute;
+      top: 0;
+      right: -160px;
   }
 
   
@@ -237,6 +282,10 @@ button{
     box-shadow: 3px 3px 3px 3px black;
 
     
+}
+
+.navbar{
+    display: none;
 }
 
 
@@ -264,6 +313,49 @@ button{
     h2{
         font-size:40px;
     }
+
+    
+    .mobile{
+        display: none;
+}
+
+   
+
+    table{
+        font-size: 25px;
+        width: auto;
+        background-color: #d2dce7;
+       
+
+      
+         
+    }
+
+    thead{
+        background-color: #79b4f5;
+       
+    }
+     
+     
+     caption{
+         font-size: 30px;
+     }
+     
+     th{
+         font-weight: bold;
+         padding: 20px;
+        
+         
+     }
+     
+     
+     
+     
+     tr:nth-last-of-type(even){
+         background-color: white;
+         padding: 20px;
+
+     }
 
    
 
@@ -343,18 +435,20 @@ button{
     
 
     
-    .info{
+    #info{
 
         display: flex;}
         
-     .info div{
+     #info div{
         
        
         flex-direction: column;
         margin: 10px;}
 
+     }
 
-@media screen and(min-width: 1200px){
+
+@media screen and(min-width: 1024px){
     html{
 
         font-size: 80%;
@@ -370,7 +464,7 @@ button{
 
 
     
-}
+
     
    
 
