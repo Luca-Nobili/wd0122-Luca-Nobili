@@ -30,7 +30,7 @@ h2{
 
 /* HEADER */
 
-@media screen and (min-width:480px)  {
+@media screen and (min-width:480px) {
     
 
 
@@ -52,9 +52,13 @@ nav a{
    
 }
 
+#due{
+    display: none;
+}
 
 
-header section{
+
+div nav{
     position: sticky;
     background-color: white;
     color: black;
@@ -66,8 +70,9 @@ header section{
 
 
 
-section img{
+nav img{
     position: absolute;
+    padding: 50px;
     left: 20px;
     top: 20px;
 }
@@ -171,7 +176,7 @@ section button{
 }
 /*aside*/
 aside img{
-    width: 80%;
+    width: 60%;
     margin-left: 50px;
 }
 
@@ -288,20 +293,25 @@ input {
       padding: 70px;
       
   }
-     .due{
+     #due{
       color: black;
       font-size:20px;
       position: absolute;
-    top: 20px;
+        top: 20px;
       right: 200px;
       padding: 20px;
+      
      
       
   }
 
+    img{
+        padding: 50px;
+    }
+
   nav button{
       position: absolute;
-      top: 0;
+      top: 25px;
       right: -160px;
   }
 
@@ -348,11 +358,18 @@ button{
     flex-grow: 1;
     flex-basis: 50%;
     flex-direction: row;
-    margin: 10px;
+    
 }
+    main img{
+        width: 80%;
+        max-width: 450px;
+        height: auto;
+        
+    }
 
     main p{
         font-size:15px;
+        
     }
 
     h2{
@@ -370,6 +387,7 @@ button{
         font-size: 25px;
         width: auto;
         background-color: #d2dce7;
+       margin-left: 50px;
        
 
       
@@ -496,9 +514,9 @@ button{
 
     }
 
-    @media screen and(min-widht: 480px) and (max-widht: 767px){
+    @media screen and(min-widht: 480px) {
 
-        section > .due{
+        #due{
             display: none;
         }
         
