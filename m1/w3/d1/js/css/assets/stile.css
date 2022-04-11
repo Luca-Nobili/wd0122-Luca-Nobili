@@ -1,0 +1,16 @@
+body{
+    background-color: coral;
+    display: flex;
+}
+
+div{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+ #coniglio{
+     background-color: red;
+     
+ }
