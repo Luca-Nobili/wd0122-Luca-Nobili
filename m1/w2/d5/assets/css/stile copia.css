@@ -142,10 +142,6 @@ header button{
 
  /* MAIN */
 
- main{
-     display: flex;
-     
- }
 
  .piccolo{
      width: 100%;
@@ -257,12 +253,51 @@ footer div{
     font-size: 20px;
  }
 
+
+
+ /*chi siamo*/
+
+main{
+    text-align: center;
+    margin: 30px;
+}
+
+table{
+    font-size: 20px;
+    width: 100%;
+}
+ 
+ 
+ caption{
+     font-size: 30px;
+ }
+ 
+ th{
+     font-weight: bold;
+    
+     
+ }
+ 
+ thead{
+     background-color: #d2dce7;
+ }
+ 
+ tfoot{
+     background-color: #d2dce7;
+ }
+
+
+
 /* RESPONSIVE */
 
 @media screen and (min-width:468px) and (max-width: 767px){
     #due{
         display: none;
         
+    }
+
+    .desktop{
+        display: none;
     }
 }
 
@@ -295,6 +330,11 @@ nav a{
  .bottone{
     
     width: 200px;
+    height: 50px;
+    background: linear-gradient(30deg, #6cc1e2,#392f7a);
+    color: white;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-bottom: 30px;
 }
 
 nav{
@@ -361,18 +401,45 @@ footer{
     padding-left: -60px;
 }
 
+.mobile{
+    display: none;
+}
 
+table{
+    font-size: 25px;
+    width: auto;
+    background-color: #d2dce7;
+   margin-left: 50px;
+   
 
+  
+     
+}
 
+thead{
+    background-color: #79b4f5;
+   
+}
+ 
+ 
+ caption{
+     font-size: 30px;
+ }
+ 
+ th{
+     font-weight: bold;
+     padding: 20px;
+    
+     
+ }
+ 
+ 
+ 
+ 
+ tr:nth-last-of-type(even){
+     background-color: white;
+     padding: 20px;
 
-
-
-
-
-
-
-
-
-
+ }
 
 }
