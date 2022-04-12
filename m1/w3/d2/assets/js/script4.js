@@ -50,11 +50,21 @@ console.log(b);
 a - + y + (b*x)
 console.log(a - + y + (b*x));
 
-let booleano = 15 > 10
-console.log(15 > 10 + true); 
+var bool = (x < 40)
+console.log(bool);
 
-booleano = 10 > 15
-console.log(false)
+let bools = (x > 40)
+console.log(bools);
+
+if (x < 40){
+    console.log('x è minore di 40');
+}else{
+    console.log('x è maggiore di 40');
+}
+
+
+
+
 
 const info =('Ciao mi chiamo' + ' ' + nome + ' ' + cognome + ' ' + ' ' + 'ho' + ' ' + eta + 'anni' + ' ' + ' ' + 'il tempo libero lo uso per' + ' ' + hobby)
 console.log(info);
