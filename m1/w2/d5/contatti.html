@@ -11,15 +11,36 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/stile.css">
+<link rel="stylesheet" href="assets/css/stile copia.css">
 </head>
 
 <body>
+  <nav>
+    <div>
+     <img  src="assets/images/logo.png" alt="">
 
+    <div class="navbar">
+      <label for="apri-menu" id="toggle"><i class="lni lni-menu"></i></label>
+      <input id="apri-menu" type="checkbox">
+      <ul id="menu">
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="chi-siamo.html" target="_blank">Chi siamo</a></li>
+        <li><a href="contatti.html" target="_blank">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="due">
+    
+    <a href="index.html" target="_blank">Home</a> 
+    <a href="chi-siamo.html" target="_blank">Chi siamo</a> 
+    <a href="contatti.html" target="_blank">Contatti</a> 
+    <form action="#" target="_blank"></form>
+    <button class="bottone" type="submit"> Registrati</button>
+  </nav>
 
 <main>
   <h3>Contatti</h3>
-<div id="info">
+<div class="article">
     
     <form action="#">
  
@@ -27,10 +48,10 @@
     <input type="email" name="email" placeholder="Inserire email"><br>
     <input type="messaggio" name="messaggio" placeholder="Inserire in breve il tuo messaggio">
 
-    <button>Invia il messaggio</button>
+    <button class="invia">Invia il messaggio</button>
   </form>
   
-  <div class="indirizzo">
+  <div>
     <h3>Sede formativa</h3>
     <p> Via Appia 1 </p> <p>00100 Roma (RM)</p><br>
     <p> @epicode.School</p>
@@ -45,6 +66,38 @@
 
 </div>
 </main>
+
+<footer>
+
+
+  <div class="info">
+
+    <div>
+      <h4>Chi siamo</h4>
+      <p>Epicode School nasce con l'obbiettivo di rivoluzionare la formazione in ambito tech.</p>
+    </div>
+    <div>
+      <h4>Ti piace ciò che vedi?Condividilo con i tuo amici</h4>
+      <i class="lni lni-facebook-original"></i> <i class="lni lni-linkedin-original"></i> <i class="lni lni-instagram-filled"></i>
+    </div>
+    <div>
+      <h4>Iscriviti alla nostra newsletter</h4>
+      <label for="message"></label>
+      <textarea name="message" id="message" cols="55" rows="5"></textarea>
+      <button class="vabene"><a href="contatti.html"></a> Va bene!</button>
+    </div>
+
+
+
+
+  </div>
+
+  <h6>&copy;2021 Epicode Web Developer scholl - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</h6>
+
+
+
+
+</footer>
 
 </body>
 

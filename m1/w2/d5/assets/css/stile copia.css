@@ -286,6 +286,38 @@ table{
      background-color: #d2dce7;
  }
 
+ textarea{
+    width: 150px;
+    height: 30px;
+
+}
+
+.invia{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(30deg, #6cc1e2,#392f7a);
+    color: white;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-bottom: 30px;
+}
+
+
+h6{
+    font-size: 15px;
+}
+
+ h3{
+    font-size:30px
+}
+
+input {
+   width: 250px;
+   height: 50px;
+   margin: 20px;
+   padding: 5px;
+   font-size: 20px;
+}
+
 
 
 /* RESPONSIVE */
@@ -441,5 +473,38 @@ thead{
      padding: 20px;
 
  }
+
+ /*contatti*/
+ textarea{
+    width: 150px;
+    height: 30px;
+
+}
+
+.invia{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(30deg, #6cc1e2,#392f7a);
+    color: white;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-bottom: 30px;
+}
+
+
+h6{
+    font-size: 15px;
+}
+
+ h3{
+    font-size:30px
+}
+
+input {
+   width: 400px;
+   height: 50px;
+   margin: 20px;
+   padding: 5px;
+   font-size: 20px;
+}
 
 }
