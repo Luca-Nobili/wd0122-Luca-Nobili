@@ -1,0 +1,89 @@
+body{
+   
+  
+    background-image: url(/assets/img/plants-path-fall-trees-wallpaper-preview.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    position: relative;
+   
+  
+    
+}
+
+
+.conteiner{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 280px;
+    height: 380px;
+    background-image: url(/assets/img/struttura-d-annata-dello-sfondo-naturale-di-legno-della-corteccia-colo-di-marrone-scuro-56035792.jpeg);
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+    margin-top: 50px;
+    transform: scale(0.05 , 0.05); 
+    top: 150px;
+    right: 340px;
+    border-radius: 5px;
+    
+   
+      
+}
+
+
+
+.conteiner:hover{
+
+    transform: scale(1);
+    transition-duration: 1s;
+    animation-fill-mode: forwards;
+  
+
+}
+
+#display{
+    width: 97%;
+    height: 70px;
+    font-size: 40px;
+    background-image: url(/assets/img/struttura-d-annata-dello-sfondo-naturale-di-legno-della-corteccia-colo-di-marrone-scuro-56035792.jpeg);
+    background-size: cover;
+    color: white;
+    margin-bottom: 5px;
+    
+}
+
+
+
+button {
+   
+    background-image: url(/assets/img/struttura-d-annata-dello-sfondo-naturale-di-legno-della-corteccia-colo-di-marrone-scuro-56035792.jpeg);
+    background-size: cover;
+     font-size: 22pt;
+    border: none;
+    margin: 4px 3px;
+    height: 50px;
+    width: 60px;
+    color: white;
+    box-shadow: 3px 3px 3px 3px black;
+    cursor: pointer;
+
+}
+
+button:active{
+
+transform: scale(0.8 , 0.8); 
+transition-duration: 0.2s;
+}
+
+.uguale{
+    width: 97%;
+    background-size: cover;
+} 
+
+
+
+
+
+  
+ 
