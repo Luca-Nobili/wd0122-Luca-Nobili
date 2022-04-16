@@ -1,5 +1,5 @@
 
-alert('Trova la calcolatrice :) ')
+
 
 
 function aggiungiNumero(bottone){
@@ -33,3 +33,6 @@ function cancella() {
 
    }
    console.log(cancella());
+
+
+

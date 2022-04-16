@@ -4,7 +4,7 @@ body{
     background-image: url(../img/plants-path-fall-trees-wallpaper-preview.jpeg);
     background-repeat: no-repeat;
     background-size: 100% ;
-    position: relative;
+    
    
   
     
@@ -13,7 +13,7 @@ body{
 
 .conteiner{
     display: flex;
-    position: absolute;
+   
     flex-direction: column;
     width: 280px;
     height: 380px;
@@ -22,9 +22,8 @@ body{
     border: 1px solid black;
     box-shadow: 10px 10px 10px black;
     margin-top: 50px;
-    transform: scale(0.05 , 0.05); 
-    top: 150px;
-    right: 340px;
+    margin-left: 300px;
+   
     border-radius: 5px;
     
    
@@ -33,14 +32,7 @@ body{
 
 
 
-.conteiner:hover{
 
-    transform: scale(1);
-    transition-duration: 1s;
-    animation-fill-mode: forwards;
-  
-
-}
 
 #display{
     width: 97%;
