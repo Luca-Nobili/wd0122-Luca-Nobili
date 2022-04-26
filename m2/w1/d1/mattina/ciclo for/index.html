@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        for (let i = 0;i < 10; i++){
+            
+            console.log(i);
+            
+        }
+
+        document.write(`<ul>`)
+
+        let pizze =['margherita','diavola','marinara']
+        for (let i = 0;i <= pizze.lenght - 1; i++){
+           document.write(`<li>${pizze[i]}</li>`)
+            
+            
+        }
+
+        document.write(`</ul>`)
+
+
+        // for of
+
+        let name = 'giancarlo'
+
+        for(let l of name){
+            document.write(`<div>${l}</div>`)
+        }
+
+
+        // for in
+
+        let user = {
+            nome : 'mario',
+            cognome : 'rossi',
+            eta : 30
+        }
+
+        for (let chiave in user){
+            console.log(chiave +': ' + user[chiave]);
+        }
+
+
+    </script>
+</body>
+</html>

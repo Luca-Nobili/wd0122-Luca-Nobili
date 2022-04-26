@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        let pizze = ['margherita','diavola','capricciosa']
+
+        document.write(`<ul>`)
+
+            pizze.forEach(function(el,i){
+                document.write(`<li>${i+1} - ${el}</li>`)
+            })
+
+            document.write(`</ul>`)
+
+
+
+            // foreach vs map
+
+            let num = [1,2,3,4,5,6,7,8,9]
+            let num2 =[ ]
+            num.forEach(function(el){
+                //console.log(el * 2);
+
+                num2.push(el * 2)
+            })
+            console.log(num, num2);
+
+
+
+            let numeri = num.map(el => el * 2)
+            console.log(numeri);
+
+
+
+            // filter
+             num = [1,2,3,4,5,6,7,8,9]
+             let filtro = num.filter(el => el > 4)
+             console.log(filtro);
+
+             //reduce
+
+             let sum = num.reduce((precedente,attuale)=> {
+                 console.log(precedente, attuale);
+                return precedente + attuale // return obblicatorio per le funzioni freccia a piu di una riga deiventano obblicatorie anche le graffe
+            
+            
+            
+            })
+             
+            //forma ristretta let sum = num.reduce (precente,attuale) => precedente + attuale 
+            
+            console.log(sum);
+
+        
+    </script>
+</body>
+</html>
