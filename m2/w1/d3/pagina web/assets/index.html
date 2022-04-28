@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+    <div class="dropdown">
+
+        <button class="dropbtn" onclick="toggleMenu()">Apri</button>
+
+        <div id="btn-panel" class="panel">
+
+            <a href="#home">Home</a>
+            <a href="#about">Chi sono</a>
+            <a href="#contatti">Contatti</a></div>
+    </div>
+    <h1 id="nome">Modifaca testo</h1>
+    <div>
+        <input type="button" value="grande" onclick="document.getElementById('nome').style.fontSize = '60px'">
+        <input type="button" value="colore" onclick="document.getElementById('nome').style.color = 'green'">
+        <input type="button" value="maiuscolo" onclick="document.getElementById('nome').style.textTransform = 'uppercase'">
+        <input type="button" value="nascondi" onclick="document.getElementById('nome').style.visibility = 'hidden'">
+        <input type="button" value="mostrare" onclick="document.getElementById('nome').style.visibility = 'visible'">
+    </div>
+
+    <div>
+        <h3>Lista delle cose da fare :</h3>
+
+        <ul>
+            <li>Pulire la stanza</li>
+            <li>Portare il cane fuori</li>
+            <li>Fare la psesa</li>
+            <li>Preparare la cena</li>
+
+        </ul>
+    </div>
+
+
+   <script src="js/script.js"></script>
+</body>
+</html>
