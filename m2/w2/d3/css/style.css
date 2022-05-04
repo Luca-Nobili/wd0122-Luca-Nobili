@@ -1,0 +1,47 @@
+.btn-primary {
+  display: inline-block;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 5px; }
+
+.btn-secondary {
+  display: inline-block;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 5px; }
+
+.btn-primary:hover {
+  transform: rotate(8deg); }
+
+.btn-secondary:hover {
+  transform: rotate(8deg); }
+
+.showcase {
+  background-color: #8a2da2; }
+  .showcase nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px; }
+  .showcase ul {
+    display: flex;
+    list-style-type: none; }
+  .showcase li {
+    padding: 15px; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.showcase-content {
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  margin: 0 100px;
+  justify-content: space-evenly; }
+  .showcase-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5px; }
+  .showcase-content img {
+    width: 50%;
+    padding-bottom: 50px; }

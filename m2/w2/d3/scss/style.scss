@@ -1,0 +1,54 @@
+
+@import 'variabili';
+@import 'bottone';
+
+.showcase{
+    background-color: $sfondo;
+   
+   
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 100px;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        
+    }
+
+    li{
+        padding: 15px;
+    }
+
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.showcase-content{
+
+    line-height: 1.4;
+   display: flex;
+   align-items: center;
+   margin:0 100px;
+    justify-content: space-evenly;
+
+    h1{
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+    img{
+        width: 50%;
+        padding-bottom: 50px;
+        
+    }
+    
+}

@@ -1,0 +1,28 @@
+
+.btn-primary{
+    display: inline-block;
+    background-color: $primary;
+    padding: 20px;
+    border-radius: 5px;
+    
+    
+}
+
+.btn-secondary{
+    display: inline-block;
+    background-color: $secondary;
+    padding: 20px;
+    border-radius: 5px;
+   
+}
+
+.btn-primary:hover{
+  
+    transform: rotate(8deg);
+    
+}
+
+.btn-secondary:hover{
+    transform: rotate(8deg);
+
+}
