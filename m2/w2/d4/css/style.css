@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+body {
+  font-family: 'Roboto', sans-serif; }
+  @media screen and (max-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden; }
+      body #main {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0; }
+      body #sidebar {
+        width: 80%; } }
+
+nav {
+  background-color: #01032f;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 3px #ebaf7e; }
+  nav ul {
+    display: flex; }
+  nav li {
+    list-style-type: none; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    flex-direction: row;
+    padding: 15px; }
+    nav a:hover {
+      color: red; }
+
+#main {
+  display: flex;
+  margin-left: 110px;
+  justify-content: space-between;
+  width: 80%; }
+  #main article {
+    width: 80%; }
+  #main li {
+    border-bottom: 1px grey dotted;
+    list-style-type: none;
+    padding: 15px; }
+  #main a {
+    text-decoration: none;
+    color: #ff7700; }
+  #main button {
+    background-color: orange;
+    width: 100px;
+    padding: 15px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px black; }
+    #main button:hover {
+      background-color: #958467; }
+
+#sidebar {
+  width: 30%;
+  padding: 15px; }
+
+#footer {
+  background-color: #0088dc;
+  padding: 30px; }

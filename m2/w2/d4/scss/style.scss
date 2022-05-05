@@ -1,0 +1,99 @@
+@import'variabili';
+@import'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+   
+ 
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        
+        overflow-x: hidden;
+
+        #main{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            margin: 0;
+        }
+
+        #sidebar{
+            width: 80%;
+        }
+       
+ 
+    }
+}
+
+
+
+nav{
+    @include navbar;
+
+
+    ul{
+        display: flex;
+    }
+
+
+    li{
+       
+        
+        list-style-type: none;
+       
+     }
+
+     a{
+         @include link;
+     }
+}
+
+
+
+
+#main{
+   
+    @include main;
+
+  
+   
+    article{
+        width: 80%;
+    }
+
+    li{
+        border-bottom: 1px grey dotted;
+        list-style-type: none;
+        padding: $padding;
+        
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: $link;
+    }
+
+    button{
+        @include button;
+    }
+
+   
+   
+    
+}
+
+#sidebar{
+    width: 30%;
+    padding: $padding;
+   
+
+}
+
+#footer{
+    background-color: rgb(0, 136, 220);
+    padding: 30px;
+}
+

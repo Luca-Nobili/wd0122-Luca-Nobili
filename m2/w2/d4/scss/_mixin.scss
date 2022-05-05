@@ -1,0 +1,39 @@
+@mixin navbar {
+    background-color: $sfondoNav;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 3px 3px rgb(235, 175, 126);
+
+    
+}
+
+@mixin link {
+    color: white;
+         text-decoration: none;
+         flex-direction: row;
+         padding: $padding;
+         &:hover{
+             color: red;
+         }
+}
+
+@mixin main {
+    display: flex;
+    margin-left: 110px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+@mixin button {
+    background-color: orange;
+    width: 100px;
+    padding: $padding;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    &:hover{
+        background-color: rgb(149, 132, 103);
+    }
+}
