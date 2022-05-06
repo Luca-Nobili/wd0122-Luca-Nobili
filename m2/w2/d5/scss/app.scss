@@ -22,8 +22,15 @@ nav{
             
         }
     }
-   
+
+    a{
+        color: white;
+    }
+    
+ 
+    
 }
+
 
 
 i{
@@ -41,7 +48,7 @@ i{
     padding: 30px 0;
 
     a{
-        background-color: $cyan;
+        background-color: $pink;
         border: 1px solid black;
         box-shadow: 1px 1px 1px black;
     }
@@ -51,8 +58,8 @@ i{
 .services{
     padding: 30px 0;
     text-align: center;
-    background-color: white;
-    margin: 100px 0px;
+    background-color: #0dcaf0;
+    margin-top: 100px ;
  
 }
 
@@ -123,6 +130,14 @@ footer{
     color: set-color($cyan);
 
     .nav-link{
+        color: white;
+        &:hover{
+            color: $pink;
+        }
+    }
+
+    button{
+        background-color: $pink;
         color: white;
     }
    
