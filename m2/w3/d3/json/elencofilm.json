@@ -1,0 +1,36 @@
+[
+    {
+        "titolo":"non succede, ma se succede",
+        "uscita":"2019",
+        "genere":"commedia romantica",
+        "regia": "Jonathan Levine",
+        "cast":[
+            "Charlize Theron",
+            "Seth Rogen"
+        ]
+    },
+
+    {
+        "titolo":"Venom",
+        "uscita":"2018",
+        "genere":"supereroi",
+        "regia":"Ruben Fleischer",
+        "cast":[
+            "Tom Hardy",
+            "Michelle Williams",
+            "Riz Ahmed"
+        ]
+    },
+
+    {
+        "titolo":"Non ci resta che piangere",
+        "uscita":"1984",
+        "genere":"commedia",
+        "regia":"Massimo troisi e Roberto genigni",
+        "cast":[
+            "Massimo Troisi",
+            "Roberto Benigni",
+            "Amanda Sandrelli"
+        ]
+    }
+]

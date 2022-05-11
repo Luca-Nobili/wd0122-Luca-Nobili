@@ -1,0 +1,31 @@
+[
+    {
+        "titolo":"1984",
+        "autore":"George Orwell"
+
+    },
+
+    {
+        "titolo":"il ritratto di Dorian Gray",
+        "autore":"Oscar Wilde"
+
+    },
+
+    {
+        "titolo":"La coscenza di Zeno",
+        "autore":"Italo Svevo"
+
+    },
+
+    {
+        "titolo":"La divina Commedia",
+        "autore":"Dante Alighieri"
+
+    },
+
+    {
+        "titolo":"Il fu Mattia Pascal",
+        "autore":"Luigi Pirandello"
+
+    }
+]

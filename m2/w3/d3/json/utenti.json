@@ -1,0 +1,41 @@
+[
+    {
+        "nome":"Luca",
+        "cognome":"Nobili",
+        "eta":"36",
+        "corso":"front-end",
+        "iscrizione":"03-2022"
+    },
+
+    {
+        "nome":"Massimiliano",
+        "cognome":"Greco",
+        "eta":"35",
+        "corso":"front-end",
+        "iscrizione":"03-2022"
+    },
+
+    {
+        "nome":"Davide",
+        "cognome":"Barbieri",
+        "eta":"28",
+        "corso":"front-end",
+        "iscrizione":"03-2022"
+    },
+
+    {
+        "nome":"Francesco",
+        "cognome":"Coppola",
+        "eta":"24",
+        "corso":"front-end",
+        "iscrizione":"03-2022"
+    },
+
+    {
+        "nome":"Chira",
+        "cognome":"Zaccone",
+        "eta":"25",
+        "corso":"front-end",
+        "iscrizione":"03-2022"
+    }
+]
