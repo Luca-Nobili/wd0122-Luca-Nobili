@@ -9,7 +9,7 @@ fetch(APPURL)
 console.log(res);
 
 
-let campiVisualizzati = ['username','firstName','lastName','gender','profileURL','email']
+let campiVisualizzati = ['username','firstName','lastName','gender','email']
 
 let trH = document.createElement('tr')
 for(campo of campiVisualizzati){
