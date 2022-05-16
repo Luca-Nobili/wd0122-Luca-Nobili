@@ -1,4 +1,4 @@
-const APPURL = 'users.json'
+const APPURL = '../users.json'
 
 let tabella = document.querySelector('#utenti')
 
