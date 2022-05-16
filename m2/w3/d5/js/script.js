@@ -1,4 +1,4 @@
-const APPURL = '../users.json'
+const APPURL = '../json/users.json'
 
 let tabella = document.querySelector('#utenti')
 
@@ -12,7 +12,7 @@ console.log(res);
 let campiVisualizzati = ['username','firstName','lastName','gender','email','photo']
 
 let trH = document.createElement('tr')
-for(campo of campiVisualizzati){
+for( campo of campiVisualizzati){
 let th = document.createElement('th')
 th.innerHTML = campo
 trH.append(th)
