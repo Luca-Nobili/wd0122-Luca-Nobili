@@ -1,22 +1,17 @@
-fetch("Abbigliamento.json")
-.then(res => res.json())
-.then(res => {
-    
-console.log(res)
-for(let abbigliamento of res){
 class Abbigliamento{
-    id:number ;
+    id: number;
     codprod:number;
-    collezione:string;
+    collezione: string;
     capo:string;
     modello:number;
     quantita:number;
     colore:string;
     prezzoivaesclusa:number;
     prezzoivainclusa:number;
-    disponibilità:string;
+    disponibile:string;
     saldo:number;
-    constructor(id:number,codprod:number,collezione:string,capo:string,modello:number,quantita:number,colore:string,prezzoivaesclusa:number,prezzoivainclusa:number,disponibilità:string,saldo:number){
+
+    constructor( id: number,codprod:number,collezione: string,capo:string,modello:number,quantita:number,colore:string,prezzoivaesclusa:number,prezzoivainclusa:number,disponibile:string,saldo:number){
         this.id = id;
         this.codprod = codprod;
         this.collezione = collezione;
@@ -26,23 +21,47 @@ class Abbigliamento{
         this.colore = colore;
         this.prezzoivaesclusa = prezzoivaesclusa;
         this.prezzoivainclusa = prezzoivainclusa;
-        this.disponibilità = disponibilità;
-        this.saldo = saldo;
+        this.disponibile = disponibile;
+        this.saldo = saldo
     }
-    getsaldocapo():number{
-        let sconto = ((this.prezzoivainclusa * this.saldo)/100)
+
+    getSaldoCapo():number{
+        let sconto =((this.prezzoivainclusa * this.saldo)/100)
         return sconto
     }
-    getacquistocapo(){
-        let caposcontato = this.prezzoivainclusa - ((this.prezzoivainclusa * this.saldo)/100)
-        return caposcontato
+
+
+      getAcquistoCapo():number{
+          let caposcontato = this.prezzoivainclusa - ((this.prezzoivainclusa * this.saldo)/100)
+          return caposcontato
+      }  
+}
+
+const APPURL = '../Abbigliamento.json'
+
+fetch(APPURL)
+.then(res => res.json())
+.then(res => {
+    let vestiti:Abbigliamento[] = []
+    for(let a of res){
+        
+        a = new Abbigliamento(a.id,a.codprod,a.collezione,a.capo,a.modello,a.quantita,a.colore,a.prezzoivaesclusa,a.prezzoivainclusa,a.disponibile,a.saldo)
+       vestiti.push(a)
+       
+        console.log(a);
+       
     }
-}
-let vestiti:any = new Abbigliamento(abbigliamento.id,abbigliamento.codprod,abbigliamento.collezione,abbigliamento.capo,abbigliamento.modello,abbigliamento.quantita,abbigliamento.colore,abbigliamento.prezzoivaesclusa,abbigliamento.prezzoivainclusa,abbigliamento.disponibilità,abbigliamento.saldo)
 
-console.log(vestiti)
-console.log('sconto: ' + vestiti.getsaldocapo()+'€')
-console.log('vestito scontato: ' +'('+ vestiti.prezzoivainclusa +'€'+ ' - ' + vestiti.getsaldocapo() +'€'+') ' +'= '+ vestiti.getacquistocapo()+'€')
-}
+    console.log(vestiti);
 
+    for(let x of vestiti){
+        console.log('sconto vestito:' + x.getSaldoCapo());
+       
+        
+        console.log('prezzo vestito: ' + x.getAcquistoCapo());
+        
+    }
+    
 })
+
+
