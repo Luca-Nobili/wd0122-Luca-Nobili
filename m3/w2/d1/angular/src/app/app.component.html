@@ -1,0 +1,17 @@
+<h1>Ciao {{name}}</h1>
+
+
+
+<ul>
+  <li *ngFor="let n of nomi">
+
+    {{n.id}} {{n.name}} 
+    <button (click)="elimina(n)">elimina</button>
+    <button (click)="dettagli(n)" class="visualizza">view</button>
+
+  </li>
+</ul>
+
+
+
+
