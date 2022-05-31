@@ -1,0 +1,13 @@
+<nav class=" navbar-dark bg-dark p-3">
+    <a class="text-white text-decoration-none m-5 p-5 " [routerLink]="['/']" 
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact : true}"
+    >Home</a>
+    <a class="text-white text-decoration-none m-5 p-5"  [routerLink]="['/active-post']" 
+    routerLinkActive="active"
+    >Attivi</a>
+    <a class="text-white text-decoration-none" [routerLink]="['/inactive-post']" 
+    routerLinkActive="active"
+    >Non Attivi</a>
+    
+</nav>
