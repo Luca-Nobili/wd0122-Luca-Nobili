@@ -1,20 +1,27 @@
 <nav>
-    <ul>
-      <li><a routerLink="/">Todos</a></li>
-      <li><a routerLink="/completati">Completati</a></li>
-    </ul>
+    
+      <a routerLink="/">Todos</a>
+      <a routerLink="/completati">Completati</a>
+    
   </nav>
   
-  
-  <div class="container">
-    <form>
-  
-      <p>{{title}}</p>
-      <input type="text" class="form-control" [(ngModel)]="title" name="title"  >
+<ng-container  *ngIf="todos"; else empty>
+  <section *ngIf="todos.length > 0; else empty">
+  <div *ngFor="let todo of todos">
+    {{todo.title}}
+    <button (click)="completa(todo.id)">&#9989;</button>
+
+  </div>
+  </section>
+</ng-container>
+<ng-template #loading>Recupero Task....</ng-template>
+<ng-template #empty>Opps, non ci sono Task!!</ng-template>
+
+
+  <input type="text" class="form-control" [(ngModel)]="input"> <button class="aggiungi" (click)="save()">&#10133;</button>
     
   
-      <button (click)="save()" class="btn btn-primary">+</button>
-    </form>
-  </div>
+      
+   
 
   

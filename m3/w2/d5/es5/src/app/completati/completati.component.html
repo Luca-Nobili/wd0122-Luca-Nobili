@@ -5,13 +5,19 @@
     
   </nav>
 
-<div *ngFor="let todo of todos">
-    {{todo.id}}
-    {{todo.title}}
-    
-    
-    
-   
+  <ng-container  *ngIf="todos"; else empty>
+    <section *ngIf="todos.length > 0; else empty">
+    <div *ngFor="let todo of todos">
+      {{todo.title}}
+      <button (click)="elimina(todo.id)">&#10060;</button>
+      
   
-  </div>
+    </div>
+    </section>
+  </ng-container>
+  <ng-template #loading>Recupero Task....</ng-template>
+  <ng-template #empty>Opps, non ci sono Task!!</ng-template>
+  
+  
+  
 
