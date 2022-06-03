@@ -1,0 +1,20 @@
+<nav>
+    <ul>
+      <li><a routerLink="/">Todos</a></li>
+      <li><a routerLink="/completati">Completati</a></li>
+    </ul>
+  </nav>
+  
+  
+  <div class="container">
+    <form>
+  
+      <p>{{title}}</p>
+      <input type="text" class="form-control" [(ngModel)]="title" name="title"  >
+    
+  
+      <button (click)="save()" class="btn btn-primary">+</button>
+    </form>
+  </div>
+
+  
