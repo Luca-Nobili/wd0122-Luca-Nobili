@@ -5,7 +5,7 @@
     
   </nav>
   
-<ng-container  *ngIf="todos"; else empty>
+<ng-container  *ngIf="todos; else loading">
   <section *ngIf="todos.length > 0; else empty">
   <div *ngFor="let todo of todos">
     {{todo.title}}
@@ -18,9 +18,18 @@
 <ng-template #empty>Opps, non ci sono Task!!</ng-template>
 
 
-  <input type="text" class="form-control" [(ngModel)]="input"> <button class="aggiungi" (click)="save()">&#10133;</button>
+  <input type="text" class="form-control" [(ngModel)]="input"> <button class="aggiungi" (click)="save()">&#10010;</button>
     
-  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <p>Ho implentato l esercizio con i metodi mancanti ma solo dopo aver visto l eserzio del tutor</p>
+  <p>Il primo push conteneva solo il metoto di aggiungere i task e la promise  e la paginazione, il resto ho dovuto prendere spunto dal tutor perche non riuscivo ad andare avanti mi ero bloccato</p>
       
    
 

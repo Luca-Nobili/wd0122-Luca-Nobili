@@ -5,7 +5,7 @@
     
   </nav>
 
-  <ng-container  *ngIf="todos"; else empty>
+  <ng-container  *ngIf="todos else loading">
     <section *ngIf="todos.length > 0; else empty">
     <div *ngFor="let todo of todos">
       {{todo.title}}
