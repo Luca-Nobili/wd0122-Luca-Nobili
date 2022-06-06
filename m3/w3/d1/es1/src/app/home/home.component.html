@@ -1,0 +1,11 @@
+<h1>Totale foto preferite: {{favCounter}}</h1>
+
+<div class="card" *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl">
+    <p>{{photo.title}}</p>
+<div class="row">
+    <button class="elimina" (click)="elimina(photo.id)">Elimina</button>
+    <button  class="aggiungi" (click)="like()">Mi Piace</button>
+
+</div>
+</div>
