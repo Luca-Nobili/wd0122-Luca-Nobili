@@ -1,0 +1,66 @@
+<h1>TD from Hero</h1>
+
+<div class="container">
+    <form (ngSubmit)="submit()" #f="ngForm">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input #nome="ngModel" ngModel name="name" id="nome" class="form-control" type="text" placeholder="nome" required >
+            <p [style.color]="'red'" *ngIf="nome.invalid && nome.touched">Campo obbligatorio</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="alterego">Alter Ego</label>
+            <input #alterego="ngModel" ngModel name="alterego" id="alterego" class="form-control" type="text" placeholder="alterego" required >
+            <p [style.color]="'red'" *ngIf="alterego.invalid && alterego.touched">Campo obbligatorio</p>
+        </div>
+
+        <div class="form-group">
+            <label for="superpotere">Super Potere</label>
+            <select ngModel name="superpotere" class="form-control" id="superpotere">
+            <option value="">Seleziona</option>
+            <option value="invisibilità">Invisibilità</option>
+            <option value="immortale">Immortale</option>
+            <option value="supervelocità">Super Velocità</option>
+            <option value="telecinesi">Telecinesi</option>
+            <option value="visionearaggix">Visione a raggi x</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label for="nemico">Nemico</label>
+            <input #nemico="ngModel" maxlength="10" ngModel name="nemico" id="nemico" class="form-control" type="text" placeholder="nemico"required >
+            <p [style.color]="'red'" *ngIf="nemico.invalid && nemico.touched">Campo obbligatorio</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="pianeta">Pianeta</label>
+            <input #pianeta="ngModel" minlength="5" ngModel name="pianeta" id="pianeta" class="form-control" type="text" placeholder="pianeta"required >
+            <p [style.color]="'red'" *ngIf="pianeta.invalid && pianeta.touched">Campo deve essere minimo 5 caratteri</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="pianeta">Debolezza</label>
+            <input #debolezza="ngModel" ngModel name="debolezza" id="debolezza" class="form-control" type="text" placeholder="debolezza" >
+            
+        </div>
+
+        <button [disabled]="f.invalid" class="btn btn-primary">Crea</button>
+       
+        
+
+
+       
+       
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+</div>
