@@ -14,8 +14,8 @@ export class RegisterComponent implements OnInit {
   }
 
   authData = {
-    email : 'admin@admin.it',
-    password : 'password'
+    email : '',
+    password : ''
   }
 
   register(){

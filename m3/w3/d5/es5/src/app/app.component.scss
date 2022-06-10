@@ -1,13 +1,38 @@
+nav{
+    background-color: rgb(174, 107, 236);
+    padding: 10px;
+    position: relative;
+    
+}
+
+
 a{
     text-decoration: none;
     margin: 25px;
     color: black;
     
-}:hover{
+}
+
+a:hover{
     color: white;
 }
 
-nav{
-    background-color: blueviolet;
-    padding: 10px;
+.logout{
+    position: absolute;
+    background-color: rgb(96, 96, 243);
+    color: white;
+    right: 20px;
+    bottom: 5px;
+    border-radius: 20px;
+    padding: 5px;
 }
+
+.logout:hover{
+   background-color: white;
+    color: black;
+   cursor: pointer;
+   transform: scale(.9);
+}
+
+
+

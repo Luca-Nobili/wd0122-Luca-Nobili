@@ -19,8 +19,8 @@ export class LoginComponent implements OnInit {
 
 
   authData = {
-    email : 'admin@admin.it',
-    password : 'password'
+    email : '',
+    password : ''
   }
 
   login(){

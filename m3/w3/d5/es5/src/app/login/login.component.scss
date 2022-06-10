@@ -3,6 +3,13 @@ button{
     color: white;
     padding: 5px;
     border-radius: 5px;
+    width: 18%;
+}
+
+button:hover{
+   
+   cursor: pointer;
+   transform: scale(.9);
 }
 
 form{
