@@ -9,7 +9,8 @@ const routes: Routes = [
   
   },
   { path: 'profilo', canActivate:[AuthGuard], loadChildren: () => import('./profilo/profilo.module').then(m => m.ProfiloModule) },
-  { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) }];
+  { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule) },
+  { path: 'film', canActivate:[AuthGuard], loadChildren: () => import('./film/film.module').then(m => m.FilmModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

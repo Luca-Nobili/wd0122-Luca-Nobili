@@ -6,5 +6,18 @@
       "id": 1
     }
   ],
-  "movies": []
+  "movies": [
+    {
+      "titolo": "il ciclone",
+      "id": 1
+    },
+    {
+      "titolo": "il ciclone",
+      "id": 2
+    },
+    {
+      "titolo": "noi",
+      "id": 3
+    }
+  ]
 }
