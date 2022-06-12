@@ -2,9 +2,12 @@
 
 <form>
     <h1>Login</h1>
-  <input type="email" placeholder="email" [(ngModel)]="authData.email" name="email">
+  <input type="email" placeholder="email" [(ngModel)]="authData.email" name="email" [(ngModel)]="input" [(ngModel)]="password">
   <input type="password" placeholder="password" [(ngModel)]="authData.password" name="password">
-  <button (click)="login()">Accedi</button>
+  <button (click)="login()" (click)="save()">Accedi</button>
 </form>
+
+
+
 
 

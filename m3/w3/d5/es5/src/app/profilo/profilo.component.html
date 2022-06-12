@@ -1,1 +1,15 @@
-<p>profilo works!</p>
+
+
+<h1>Dettagli Profilo</h1>
+
+
+
+
+<div *ngFor="let user of users"  >
+    <p>{{user.email}}</p>
+    
+    
+    
+</div>
+
+<input type="text" [(ngModel)]="input" [(ngModel)]="password">
