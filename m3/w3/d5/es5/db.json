@@ -9,6 +9,11 @@
       "email": "fosca15@abc.com",
       "password": "$2a$10$4pbERUhbFcIwxid6v1MUb.qT4jWRwKLW2cDAmLudKTTxk.ltUJPeW",
       "id": 2
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$xM7V27HuCHnzuXECcZXCReIN9sHxqv9tBCt4hJGrXkU6WBUEFDM5q",
+      "id": 3
     }
   ],
   "movies": [
