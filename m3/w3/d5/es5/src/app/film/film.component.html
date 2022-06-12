@@ -1,7 +1,16 @@
 <form >
     <h1>Aggiungi Film Preferito</h1>
-    <input type="text" placeholder="Film" [(ngModel)]="film.titolo" name="film">
-    <button (click)="addFilm()">Aggiungi Film Preferito</button>
+    <input type="text" placeholder="Film" [(ngModel)]="film.titolo" name="film" [(ngModel)]="input">
+    <button (click)="addFilm()" (click)="save()">Aggiungi Film </button>
+
+    <hr>
+    
+    <h2>Lista Film Preferiti</h2>
+    
+    <div *ngFor="let movie of movies">
+        {{movie.titolo}}
+        <button class="elimina" (click)="elimina(movie.id)">&#10060;</button>
+    </div>
 
     
         

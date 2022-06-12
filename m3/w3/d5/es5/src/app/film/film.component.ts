@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../movie.service';
+import { Movie } from '../class/movie';
+import { MovieService } from '../service/movie.service';
 
 @Component({
   selector: 'app-film',
@@ -8,20 +9,41 @@ import { MovieService } from '../movie.service';
 })
 export class FilmComponent implements OnInit {
 
+  movies : Movie [] | undefined = undefined
+
+  input: string | undefined
+
+  film={
+    titolo :''
+  }
+  
+  
   constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
+    this.movieService.getPreferito(false).then((res : Movie[])=>{
+      this.movies = res
+    })
   }
 
-  film = {
-      
-      titolo : ''
-  }
 
   addFilm(){
-    this.movieService.registerUser(this.film)
+    this.movieService.addMovie(this.film)
     .subscribe(data => {
       console.log(data)
+    })
+  }
+
+
+  save(){
+    this.movieService.addPreferito(this.input as string).then(res =>{
+      this.movies = res.filter(e=> !e.completed)
+    })
+  }
+
+  elimina (id:number){
+    this.movieService.removePreferito(id).then(res =>{
+      this.movies = res
     })
   }
 

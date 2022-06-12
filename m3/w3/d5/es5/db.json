@@ -4,6 +4,11 @@
       "email": "admin@admin.it",
       "password": "$2a$10$bNXkc6IxZ9KJkeHdFM3e4uA0FylCFw/p1u.3H083iFfdJilnRJU8G",
       "id": 1
+    },
+    {
+      "email": "fosca15@abc.com",
+      "password": "$2a$10$4pbERUhbFcIwxid6v1MUb.qT4jWRwKLW2cDAmLudKTTxk.ltUJPeW",
+      "id": 2
     }
   ],
   "movies": [
@@ -12,12 +17,16 @@
       "id": 1
     },
     {
-      "titolo": "il ciclone",
+      "titolo": "noi",
       "id": 2
     },
     {
-      "titolo": "noi",
+      "titolo": "il gladiatore",
       "id": 3
+    },
+    {
+      "titolo": "il padrino",
+      "id": 4
     }
   ]
 }
